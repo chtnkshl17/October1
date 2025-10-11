@@ -29,17 +29,17 @@ public class StringRev {
         }
 
         System.out.println();
-        System.out.println();
 
-        for (char ch : chars) {
 
-            System.out.print(ch);
 
-        }
 
-        System.out.println();
-       
-        if (city.equalsIgnoreCase("otnorot")) {
+        String RevCity = new String(chars);
+
+        System.out.println(RevCity);
+
+
+
+        if (city.equalsIgnoreCase(RevCity)) {
 
             System.out.println("String is palindrome");
 
