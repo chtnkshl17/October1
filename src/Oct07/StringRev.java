@@ -31,12 +31,9 @@ public class StringRev {
         System.out.println();
 
 
-
-
         String RevCity = new String(chars);
 
         System.out.println(RevCity);
-
 
 
         if (city.equalsIgnoreCase(RevCity)) {
