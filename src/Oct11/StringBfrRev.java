@@ -12,18 +12,13 @@ public class StringBfrRev {
         StringBuilder result = new StringBuilder();
 
 
-        for (String word : words){
+        for (String word : words) {
 
             result.append(new StringBuilder(result.reverse()));
+
         }
 
-        System.out.println();
-
-
-
-
-
-
+        System.out.println(result);
 
 
     }
