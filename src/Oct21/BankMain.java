@@ -6,7 +6,7 @@ public class BankMain {
 
         BankofCanada bankofCanada = new ScotiaBank();
 
-        System.out.println(bankofCanada.rateOfInterest());
+        System.out.println("Scotiabank rate of interest :" + bankofCanada.rateOfInterest());
 
 
         BankofCanada bankofCanada1 = new TDBank();
