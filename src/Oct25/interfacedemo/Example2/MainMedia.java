@@ -1,5 +1,7 @@
 package Oct25.interfacedemo.Example2;
 
+
+
 public class MainMedia {
 
     public static void main(String[] args) {
@@ -9,7 +11,6 @@ public class MainMedia {
         Facebook facebook = new Facebook();
 
         facebook.friendRequest();
-
         facebook.imageSharing();
         facebook.videoSharing();
         facebook.like();
@@ -19,6 +20,7 @@ public class MainMedia {
         System.out.println("Welcome to Instagram");
 
         Instagram instagram = new Instagram();
+
         instagram.friendRequest();
         instagram.imageSharing();
         instagram.videoSharing();
@@ -39,14 +41,27 @@ public class MainMedia {
         System.out.println();
 
 
-        System.out.println();
         System.out.println("Welcome to Zoom Workplace");
+
         Zoom zoom = new Zoom();
+
         zoom.connectionRequest();
         zoom.chatting();
         zoom.reactions();
         zoom.screenSharing();
         zoom.scheduling();
+        System.out.println();
+
+
+        System.out.println("Welcome to CNN");
+
+        CNN cnn = new CNN();
+
+        cnn.news();
+        cnn.weatherForecasting();
+
+
+
 
 
     }
