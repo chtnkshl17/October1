@@ -13,12 +13,16 @@ public class Main {
         System.out.println("Enter the userName ");
         String userName = scanner.next();
 
+        System.out.println("Enter the password");
+        String password = scanner.next();
+
         //  user 1
         onlineWebApp.ecomApp(email, userName, PaymentMethod.CREDIT_CARD);
 
 
         // user 2
         onlineWebApp.ecomApp(email, userName, PaymentMethod.MASTER_CARD);
+
 
 
         // password, paymentMethod, phoneNumber

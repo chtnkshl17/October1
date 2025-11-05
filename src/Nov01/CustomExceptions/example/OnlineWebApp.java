@@ -3,7 +3,7 @@ package Nov01.CustomExceptions.example;
 public class OnlineWebApp {
 
     public void register(String email) throws InvalidEmailLengthException {
-        if(email.length() < 5){
+        if (email.length() < 5) {
             throw new InvalidEmailLengthException("invalid email exception");
         }
         // if user is trying to add phone number instead of email, then throw exception
@@ -16,7 +16,7 @@ public class OnlineWebApp {
     }
 
     public void login(String email, String userName) throws InvalidEmailLengthException {
-        if(userName.equals(email)){
+        if (userName.equals(email)) {
             throw new InvalidCredentialsException("Invalid Username");
         }
         emailConfirmation(email);
@@ -36,8 +36,17 @@ public class OnlineWebApp {
     public void ecomApp(String email, String userName, PaymentMethod paymentMethod) {
         try {
             payment(email, userName, paymentMethod);
-        }catch (InvalidEmailLengthException e){
+        } catch (InvalidEmailLengthException e) {
             e.printStackTrace();
         }
+
     }
+
+    public void password(String password){
+        if(password.length()<8){
+            throw new InvalidPasswordLength("Password must have minimum 8 characters");
+        }
+        System.out.println("Correct password");
+    }
+
 }

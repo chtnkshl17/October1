@@ -12,7 +12,7 @@ public class IvrSwitch {
 
         int lang = scanner.nextInt();
 
-        if(lang == 1) {
+        if (lang == 1) {
             System.out.println("English Selected");
             System.out.println();
             System.out.println("Press 1 for Sales");
@@ -76,8 +76,7 @@ public class IvrSwitch {
                     System.out.println("Feedback");
                     break;
             }
-        }
-        else {
+        } else {
             System.out.println("French Selected");
             System.out.println();
         }

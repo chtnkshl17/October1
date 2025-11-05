@@ -16,7 +16,7 @@ public class Break {
 
         for (int attempt = 1; attempt <= 3;attempt++){
 
-            System.out.println("Attempt" + attempt);
+            System.out.println("Attempt :" + attempt);
             int N= scanner.nextInt();
 
             if(N == luckyNum){
