@@ -4,7 +4,7 @@ public class ArrayAssignment {
 
     public static void main(String[] args) {
 
-        int[] arr = {10, 23, 234, 343, 34};
+        int[] arr = {200, 23, 234, 343, 34};
 
         int maxNumber = arr[0];
         int minNumber = arr[0];
